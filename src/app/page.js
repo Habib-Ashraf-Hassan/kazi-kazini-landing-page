@@ -6,8 +6,8 @@ export default function Home() {
       <nav className="flex flex-wrap justify-between items-center py-4 md:py-6">
         <div className="text-lg font-bold">KAZI KAZINI</div>
         <div className="flex flex-wrap items-center space-x-4 md:space-x-8 mt-4 md:mt-0">
-          <div className="text-lg">Home</div>
-          <div className="text-lg">About</div>
+          <div className="text-lg">Page</div>
+          <div className="text-lg">Page</div>
           <div className="text-lg">Log in</div>
           <button className="px-4 py-2 bg-black text-white rounded">Sign Up</button>
         </div>
