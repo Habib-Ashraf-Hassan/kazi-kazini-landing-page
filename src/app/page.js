@@ -21,7 +21,15 @@ export default function Home() {
           <button className="px-6 py-3 bg-black text-white rounded">Get Started</button>
         </div>
         <div className="mt-10">
-          <Image src="/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="Main Image" width={857} height={269} className="rounded" />
+          {/* <Image src="/workspace.jpg" alt="Main Image" width={857} height={269} className="rounded" /> */}
+          <img
+            src="https://picsum.photos/500/300"
+            alt="Main Image"
+            className="w-full h-auto rounded"
+            style={{ aspectRatio: '857/269' }}
+          />
+
+          
         </div>
       </header>
       <section className="py-10 md:py-20">
@@ -33,7 +41,13 @@ export default function Home() {
           <div className="bg-white p-6 md:p-8 rounded shadow-lg">
             <p className="text-lg font-medium">“A terrific piece of praise”</p>
             <div className="flex items-center mt-4">
-              <Image src="/avatar1.jpg" alt="Avatar 1" width={45} height={45} className="rounded-full" />
+              {/* <Image src="" alt="Avatar 1" width={45} height={45} className="rounded-full" /> */}
+              <img
+                src="https://picsum.photos/100/100"
+                  alt="Main Image"
+                  className="rounded-full"
+                  style={{ aspectRatio: '45/45' }}
+              />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
                 <p className="text-sm text-gray-500">Description</p>
@@ -43,7 +57,13 @@ export default function Home() {
           <div className="bg-white p-6 md:p-8 rounded shadow-lg">
             <p className="text-lg font-medium">“A fantastic bit of feedback”</p>
             <div className="flex items-center mt-4">
-              <Image src="/avatar2.jpg" alt="Avatar 2" width={45} height={45} className="rounded-full" />
+              {/* <Image src="" alt="Avatar 2" width={45} height={45} className="rounded-full" /> */}
+              <img
+                src="https://picsum.photos/100/100"
+                  alt="Main Image"
+                  className="rounded-full"
+                  style={{ aspectRatio: '45/45' }}
+              />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
                 <p className="text-sm text-gray-500">Description</p>
@@ -53,7 +73,13 @@ export default function Home() {
           <div className="bg-white p-6 md:p-8 rounded shadow-lg">
             <p className="text-lg font-medium">“A genuinely glowing review”</p>
             <div className="flex items-center mt-4">
-              <Image src="/avatar3.jpg" alt="Avatar 3" width={45} height={45} className="rounded-full" />
+              {/* <Image src="" alt="Avatar 3" width={45} height={45} className="rounded-full" /> */}
+              <img
+                src="https://picsum.photos/100/100"
+                  alt="Main Image"
+                  className="rounded-full"
+                  style={{ aspectRatio: '45/45' }}
+              />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
                 <p className="text-sm text-gray-500">Description</p>
@@ -62,26 +88,39 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="py-10 md:py-20 bg-gray-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-4">Topic</h3>
-            <ul className="space-y-2">
-              <li className="text-lg text-gray-600">Page</li>
-              <li className="text-lg text-gray-600">Page</li>
-              <li className="text-lg text-gray-600">Page</li>
-            </ul>
+      <footer className="py-20 bg-gray-100">
+          <div className="flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8 md:justify-between">
+            <div>
+              <h2 className="text-2xl font-bold">Kazi Kazini</h2>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Topic</h3>
+              <ul className="space-y-2">
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Topic</h3>
+              <ul className="space-y-2">
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Topic</h3>
+              <ul className="space-y-2">
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+                <li className="text-lg text-gray-600">Page</li>
+              </ul>
+            </div>
+            
           </div>
-          <div>
-            <h3 className="text-lg md:text-xl font-semibold mb-4">Topic</h3>
-            <ul className="space-y-2">
-              <li className="text-lg text-gray-600">Page</li>
-              <li className="text-lg text-gray-600">Page</li>
-              <li className="text-lg text-gray-600">Page</li>
-            </ul>
-          </div>
-        </div>
       </footer>
+
     </div>
   );
 }
