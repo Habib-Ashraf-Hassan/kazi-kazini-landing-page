@@ -3,62 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0; /* Black text */
+  --background-start-rgb: 255, 255, 255; /* White background start */
+  --background-end-rgb: 255, 255, 255; /* White background end */
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: rgb(var(--background-rgb));
-  @apply font-sans;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  @apply font-bold;
-}
-
-h1 {
-  @apply text-6xl;
-}
-
-h2 {
-  @apply text-4xl;
-}
-
-h3 {
-  @apply text-3xl;
-}
-
-h4 {
-  @apply text-2xl;
-}
-
-h5 {
-  @apply text-xl;
-}
-
-h6 {
-  @apply text-lg;
-}
-
-p {
-  @apply text-gray-500;
-}
-
-button {
-  @apply px-6 py-3 bg-black text-white rounded;
-}
-
-nav a {
-  @apply text-lg;
-}
-
-.footer-topic {
-  @apply text-xl font-semibold mb-4;
-}
-
-.footer-link {
-  @apply text-lg text-gray-600;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -66,4 +23,3 @@ nav a {
     text-wrap: balance;
   }
 }
-
