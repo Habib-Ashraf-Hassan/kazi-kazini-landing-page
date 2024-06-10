@@ -42,11 +42,12 @@ export default function Home() {
         </div>
       </nav>
       <header className="text-center py-10 md:py-20">
-        <div className="space-y-6">
+        <div className="space-y-6 flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-bold">Closing The Gap</h1>
-          <p className="text-lg md:text-xl text-gray-400">
-            We link employers with university students effortlessly, offering experience and income to students and talented labour to employers
+          <p className="text-lg md:text-xl text-gray-400 max-w-[70ch]">
+              We link employers with university students, offering experience and income to students and talented labour to employers
           </p>
+
           <button className="px-6 py-3 bg-black text-white rounded">Get Started</button>
         </div>
         <div className="mt-10 flex justify-center">
