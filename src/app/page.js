@@ -5,7 +5,8 @@ export default function Home() {
     <div className="container mx-auto p-4 md:p-8">
       <nav className="flex flex-wrap justify-between items-center py-4 md:py-6">
         <div className="text-lg font-bold">KAZI KAZINI</div>
-        <div className="flex flex-wrap items-center space-x-4 md:space-x-8 mt-4 md:mt-0">
+        <p className='md:hidden block'>Menu</p>
+        <div className="md:flex hidden flex-wrap items-center space-x-4 md:space-x-8 mt-4 md:mt-0">
           <div className="text-lg">Page</div>
           <div className="text-lg">Page</div>
           <div className="text-lg">Log in</div>
@@ -15,19 +16,19 @@ export default function Home() {
       <header className="text-center py-10 md:py-20">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold">Closing The Gap</h1>
-          <p className="text-lg md:text-xl text-gray-500">
+          <p className="text-lg md:text-xl text-gray-400">
             We link employers with university students effortlessly, offering experience and income to students and talented labour to employers
           </p>
           <button className="px-6 py-3 bg-black text-white rounded">Get Started</button>
         </div>
-        <div className="mt-10">
-          {/* <Image src="/workspace.jpg" alt="Main Image" width={857} height={269} className="rounded" /> */}
-          <img
+        <div className="mt-10 flex justify-center">
+          <Image src="/images/laptop.jpg" alt="Main Image" width={900} height={269} className="rounded" />
+          {/* <img
             src="https://picsum.photos/500/300"
             alt="Main Image"
             className="w-full h-auto rounded"
             style={{ aspectRatio: '857/269' }}
-          />
+          /> */}
 
           
         </div>
