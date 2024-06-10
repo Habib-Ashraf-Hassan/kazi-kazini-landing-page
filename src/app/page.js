@@ -1,11 +1,36 @@
+"use client";
 import Image from 'next/image';
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+
 
 export default function Home() {
   return (
     <div className="container mx-auto p-4 md:p-8">
       <nav className="flex flex-wrap justify-between items-center py-4 md:py-6">
         <div className="text-lg font-bold">KAZI KAZINI</div>
-        <p className='md:hidden block'>Menu</p>
+        {/* <p className='md:hidden block'>Menu</p> */}
+        <DropdownMenu className="md:hidden block">
+          <DropdownMenuTrigger className='md:hidden block'>
+            <Button className="px-3 py-3 bg-black text-white rounded">Open</Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuItem>Page</DropdownMenuItem>
+            <DropdownMenuItem>Page</DropdownMenuItem>
+            <DropdownMenuItem>Log in</DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuLabel>Sign Up</DropdownMenuLabel>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
         <div className="md:flex hidden flex-wrap items-center space-x-4 md:space-x-8 mt-4 md:mt-0">
           <div className="text-lg">Page</div>
           <div className="text-lg">Page</div>
