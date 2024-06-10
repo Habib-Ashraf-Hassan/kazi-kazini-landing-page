@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import {MenuIcon} from "lucide-react"
 import {
@@ -14,6 +15,10 @@ import {
 
 
 export default function Home() {
+  const router = useRouter();
+        function handleGoTo(){
+            router.push('construction');
+        }
   return (
     <div className="container mx-auto p-4 md:p-8">
       <nav className="flex flex-wrap justify-between items-center py-4 md:py-6">
@@ -37,8 +42,8 @@ export default function Home() {
         <div className="md:flex hidden flex-wrap items-center space-x-4 md:space-x-8 mt-4 md:mt-0">
           <div className="text-lg cursor-pointer">Page</div>
           <div className="text-lg cursor-pointer">Page</div>
-          <div className="text-lg cursor-pointer">Log in</div>
-          <button className="px-4 py-2 bg-black text-white rounded hover:shadow-md hover:shadow-gray-500 transform transition-transform duration-200 hover:scale-105">Sign Up</button>
+          <div onClick={handleGoTo} className="text-lg cursor-pointer">Log in</div>
+          <button onClick={handleGoTo} className="px-4 py-2 bg-black text-white rounded hover:shadow-md hover:shadow-gray-500 transform transition-transform duration-200 hover:scale-105">Sign Up</button>
 
         </div>
       </nav>
@@ -49,7 +54,9 @@ export default function Home() {
               We link employers with university students, offering experience and income to students and talented labour to employers
           </p>
 
-          <button className="px-6 py-3 bg-black text-white rounded hover:shadow-md hover:shadow-gray-500 transform transition-transform duration-200 hover:scale-105">Get Started</button>
+          <button onClick={handleGoTo} className="px-6 py-3 bg-black text-white rounded hover:shadow-md hover:shadow-gray-500 transform transition-transform duration-200 hover:scale-105">
+            Get Started
+          </button>
         </div>
         <div className="mt-10 flex justify-center">
           <Image src="/images/laptop.jpg" alt="Main Image" width={900} height={269} className="rounded" />
