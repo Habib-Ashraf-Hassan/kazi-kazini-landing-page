@@ -1,6 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
+import {MenuIcon} from "lucide-react"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,7 +21,9 @@ export default function Home() {
         {/* <p className='md:hidden block'>Menu</p> */}
         <DropdownMenu className="md:hidden block">
           <DropdownMenuTrigger className='md:hidden block'>
-            <Button className="px-3 py-3 bg-black text-white rounded">Open</Button>
+            <Button className="px-3 py-3 bg-black text-white rounded">
+              <MenuIcon />
+            </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>Page</DropdownMenuItem>
