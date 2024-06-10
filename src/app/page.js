@@ -21,9 +21,9 @@ export default function Home() {
         {/* <p className='md:hidden block'>Menu</p> */}
         <DropdownMenu className="md:hidden block">
           <DropdownMenuTrigger className='md:hidden block'>
-            <Button className="px-3 py-3 bg-black text-white rounded">
-              <MenuIcon />
-            </Button>
+            
+              <MenuIcon/>
+
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem>Page</DropdownMenuItem>
@@ -52,13 +52,6 @@ export default function Home() {
         </div>
         <div className="mt-10 flex justify-center">
           <Image src="/images/laptop.jpg" alt="Main Image" width={900} height={269} className="rounded" />
-          {/* <img
-            src="https://picsum.photos/500/300"
-            alt="Main Image"
-            className="w-full h-auto rounded"
-            style={{ aspectRatio: '857/269' }}
-          /> */}
-
           
         </div>
       </header>
@@ -73,10 +66,12 @@ export default function Home() {
             <div className="flex items-center mt-4">
               {/* <Image src="" alt="Avatar 1" width={45} height={45} className="rounded-full" /> */}
               <img
-                src="https://picsum.photos/100/100"
+                src="/images/prof-man.jpg"
                   alt="Main Image"
                   className="rounded-full"
-                  style={{ aspectRatio: '45/45' }}
+                  width={100}
+                  height={80}
+                  style={{ aspectRatio: '120/120' }}
               />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
@@ -89,10 +84,12 @@ export default function Home() {
             <div className="flex items-center mt-4">
               {/* <Image src="" alt="Avatar 2" width={45} height={45} className="rounded-full" /> */}
               <img
-                src="https://picsum.photos/100/100"
+                src="/images/woman.jpg"
                   alt="Main Image"
                   className="rounded-full"
-                  style={{ aspectRatio: '45/45' }}
+                  width={100}
+                  height={80}
+                  style={{ aspectRatio: '120/120' }}
               />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
@@ -105,10 +102,12 @@ export default function Home() {
             <div className="flex items-center mt-4">
               {/* <Image src="" alt="Avatar 3" width={45} height={45} className="rounded-full" /> */}
               <img
-                src="https://picsum.photos/100/100"
+                src="/images/man-stand.jpg"
                   alt="Main Image"
                   className="rounded-full"
-                  style={{ aspectRatio: '45/45' }}
+                  width={100}
+                  height={80}
+                  style={{ aspectRatio: '120/120' }}
               />
               <div className="ml-4">
                 <p className="font-medium">Name</p>
